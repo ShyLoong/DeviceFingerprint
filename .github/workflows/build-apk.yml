@@ -1,0 +1,63 @@
+name: Build APK and Release
+
+on:
+  # 手动触发
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to upload APK to'
+        required: true
+        default: 'v1.0.0'
+  # Release 创建时自动触发
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build APK with Gradle
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Rename APK
+        run: |
+          mkdir -p release
+          cp app/build/outputs/apk/debug/app-debug.apk release/DeviceFingerprint-v1.0.0-debug.apk
+
+      - name: Upload APK to Release
+        uses: softprops/action-gh-release@v1
+        if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
+        with:
+          files: release/*.apk
+          tag_name: ${{ github.event.inputs.tag || github.event.release.tag_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload APK as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DeviceFingerprint-APK
+          path: release/*.apk
