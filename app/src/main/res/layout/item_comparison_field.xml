@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="6dp"
+    android:paddingHorizontal="16dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Field name + match indicator -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_field_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Brand"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MATCH"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp" />
+    </LinearLayout>
+
+    <!-- Value A -->
+    <TextView
+        android:id="@+id/tv_value_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: Xiaomi"
+        android:textSize="12sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_marginTop="2dp" />
+
+    <!-- Value B -->
+    <TextView
+        android:id="@+id/tv_value_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="B: Xiaomi"
+        android:textSize="12sp"
+        android:textColor="?android:attr/textColorSecondary" />
+
+</LinearLayout>

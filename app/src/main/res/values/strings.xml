@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Device Fingerprint</string>
+
+    <!-- Main Activity -->
+    <string name="device_fingerprint">Device Fingerprint</string>
+    <string name="subtitle">Multi-dimensional Device Identification</string>
+    <string name="device_overview">Device Overview</string>
+    <string name="device_fingerprint_title">Device Fingerprint</string>
+    <string name="risk_assessment">Risk Assessment</string>
+    <string name="device">Device</string>
+    <string name="android">Android</string>
+    <string name="features">Features</string>
+    <string name="collected">Collected</string>
+    <string name="collect_device_info">Collect Device Info</string>
+    <string name="details">Details</string>
+    <string name="compare">Compare</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+
+    <!-- Device Detail -->
+    <string name="device_details">Device Details</string>
+    <string name="copy_as_json">Copy as JSON</string>
+    <string name="copied_json">Device JSON copied to clipboard! Paste in Compare page.</string>
+
+    <!-- Compare -->
+    <string name="compare_devices">Compare Devices</string>
+    <string name="device_a">Device A</string>
+    <string name="device_b">Device B</string>
+    <string name="select_from_local">Select from local history</string>
+    <string name="from_history">From History</string>
+    <string name="import_json">Import JSON</string>
+    <string name="paste_device_json">Paste device info JSON from another phone</string>
+    <string name="paste_json_hint">Paste JSON here... (copy from another phone)</string>
+    <string name="paste_from_clipboard">Paste from Clipboard</string>
+    <string name="clipboard_empty">Clipboard is empty</string>
+    <string name="pasted">Pasted from clipboard</string>
+    <string name="similarity_score">Similarity Score</string>
+    <string name="hamming_distance">Hamming Distance</string>
+    <string name="dimension_breakdown">Dimension Breakdown</string>
+    <string name="select_device_a">Please select Device A</string>
+    <string name="select_device_b">Please select Device B</string>
+    <string name="paste_device_b_json">Please paste Device B JSON</string>
+    <string name="invalid_json">Invalid JSON format</string>
+    <string name="json_parse_error">JSON parse error</string>
+    <string name="same_device_warning">Same device selected, similarity will be 100%</string>
+    <string name="need_2_devices">Need at least 2 devices. Collect more or use Import JSON.</string>
+    <string name="select_two_different">Please select two different devices</string>
+
+    <!-- Result -->
+    <string name="same_device">Same Device</string>
+    <string name="same_device_desc">The two devices appear to be the same device</string>
+    <string name="same_device_action">Allow - No additional verification needed</string>
+    <string name="likely_same">Likely Same</string>
+    <string name="likely_same_desc">High probability these are the same device</string>
+    <string name="likely_same_action">Behavior check - Monitor user behavior patterns</string>
+    <string name="uncertain">Uncertain</string>
+    <string name="uncertain_desc">May be a new device, additional verification recommended</string>
+    <string name="uncertain_action">MFA Required - Trigger multi-factor authentication</string>
+    <string name="new_device">New Device</string>
+    <string name="new_device_desc">This appears to be a different device</string>
+    <string name="new_device_action">MFA + Monitor - Require verification and increase monitoring</string>
+    <string name="high_risk">High Risk</string>
+    <string name="high_risk_desc">Significant differences detected, potential fraud</string>
+    <string name="high_risk_action">Block/Review - Block access or send for manual review</string>
+    <string name="match">MATCH</string>
+    <string name="diff">DIFF</string>
+
+    <!-- History -->
+    <string name="collection_history">Collection History</string>
+    <string name="no_history">No History</string>
+    <string name="collect_to_build">Collect device information to build history</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="remove_from_history">Remove this device from history?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_all_history">Clear All History</string>
+    <string name="confirm_clear_all">Are you sure you want to delete all history?</string>
+    <string name="clear_all">Clear All</string>
+    <string name="deleted">Deleted</string>
+    <string name="history_cleared">History cleared</string>
+
+    <!-- Settings -->
+    <string name="app_settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="language_en">English</string>
+    <string name="language_cn">Chinese</string>
+    <string name="theme_color">Theme Color</string>
+    <string name="blue">Blue</string>
+    <string name="purple">Purple</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="orange">Orange</string>
+    <string name="restart_required">App will restart to apply changes</string>
+
+    <!-- Permission -->
+    <string name="permissions_required">Permissions Required</string>
+    <string name="permission_rationale">This app needs certain permissions to collect device information for fingerprinting:\n\n- Phone State: For device identifier (IMEI)\n- Location: For cell tower and WiFi information\n\nThese are used solely for device fingerprinting and risk assessment.</string>
+    <string name="grant">Grant</string>
+    <string name="skip">Skip</string>
+    <string name="permissions_granted">Permissions granted! You can now collect device info.</string>
+    <string name="permissions_denied">Some permissions denied. Collection will use limited features.</string>
+
+    <!-- Collection -->
+    <string name="collection_complete">Collection complete!</string>
+    <string name="error">Error</string>
+    <string name="no_device_data">No device data</string>
+    <string name="failed_to_copy">Failed to copy</string>
+
+    <!-- Dimensions -->
+    <string name="hardware">Hardware</string>
+    <string name="system">System</string>
+    <string name="network">Network</string>
+    <string name="app">App</string>
+    <string name="risk">Risk</string>
+    <string name="similarity">Similarity</string>
+
+    <!-- About -->
+    <string name="about">About</string>
+    <string name="about_this_app">About This App</string>
+    <string name="about_desc">This application demonstrates multi-dimensional device fingerprinting technology for user identification and risk assessment. It collects hardware, system, network, and application information to generate a unique device fingerprint.</string>
+    <string name="features_list">Features</string>
+    <string name="feature_50_fields">50+ device features collected</string>
+    <string name="feature_simhash">SimHash-based fingerprint generation</string>
+    <string name="feature_multi_dim">Multi-dimensional similarity comparison</string>
+    <string name="feature_risk">Risk environment detection</string>
+    <string name="feature_history">Device history management</string>
+    <string name="similarity_thresholds">Similarity Thresholds</string>
+    <string name="threshold_90">90-100%: Same Device - Allow</string>
+    <string name="threshold_75">75-90%: Likely Same - Behavior Check</string>
+    <string name="threshold_60">60-75%: Uncertain - MFA Required</string>
+    <string name="threshold_40">40-60%: New Device - MFA + Monitor</string>
+    <string name="threshold_0">0-40%: High Risk - Block/Review</string>
+    <string name="privacy_notice">Privacy Notice</string>
+    <string name="privacy_desc">All device information is stored locally on your device only. No data is transmitted to external servers. This app is for demonstration and educational purposes.\n\nFor production use, ensure compliance with local privacy laws (PIPL, GDPR) and obtain user consent before collecting device information.</string>
+    <string name="copyright">2024 Device Fingerprint Demo</string>
+</resources>

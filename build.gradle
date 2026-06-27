@@ -1,0 +1,4 @@
+// Top-level build file for Device Fingerprint project
+plugins {
+    id 'com.android.application' version '8.2.0' apply false
+}

@@ -1,0 +1,82 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+
+# User-specific configurations
+.idea/libraries/
+.idea/caches/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries/
+.idea/gradle.xml
+.idea/misc.xml
+.idea/vcs.xml
+
+# Android Studio captures folder
+captures/
+
+# Build outputs
+app/build/
+*/build/
+
+# Signing files
+*.jks
+*.keystore
+
+# External native build
+cmake-build-*/
+.cxx/
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# APK files
+*.apk
+*.ap_
+*.aab
+
+# Navigation safe args (generated)
+app/build/intermediates/navigation_json/
+
+# Java class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Keep gradle wrapper jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Keep proguard files
+!app/proguard-rules.pro
+
+# Generated files
+app/build/generated/
+
+# NDK
+obj/

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">设备指纹</string>
+
+    <!-- Main Activity -->
+    <string name="device_fingerprint">设备指纹</string>
+    <string name="subtitle">多维设备识别</string>
+    <string name="device_overview">设备概览</string>
+    <string name="device_fingerprint_title">设备指纹</string>
+    <string name="risk_assessment">风险评估</string>
+    <string name="device">设备</string>
+    <string name="android">Android</string>
+    <string name="features">特征数</string>
+    <string name="collected">采集时间</string>
+    <string name="collect_device_info">采集设备信息</string>
+    <string name="details">详情</string>
+    <string name="compare">对比</string>
+    <string name="history">历史记录</string>
+    <string name="settings">设置</string>
+
+    <!-- Device Detail -->
+    <string name="device_details">设备详情</string>
+    <string name="copy_as_json">复制 JSON</string>
+    <string name="copied_json">设备 JSON 已复制到剪贴板！可在对比页面粘贴。</string>
+
+    <!-- Compare -->
+    <string name="compare_devices">对比设备</string>
+    <string name="device_a">设备 A</string>
+    <string name="device_b">设备 B</string>
+    <string name="select_from_local">从本地历史中选择</string>
+    <string name="from_history">来自历史</string>
+    <string name="import_json">导入 JSON</string>
+    <string name="paste_device_json">粘贴另一台手机的设备信息 JSON</string>
+    <string name="paste_json_hint">在此粘贴 JSON…（从另一台手机的详情页复制）</string>
+    <string name="paste_from_clipboard">从剪贴板粘贴</string>
+    <string name="clipboard_empty">剪贴板为空</string>
+    <string name="pasted">已从剪贴板粘贴</string>
+    <string name="similarity_score">相似度得分</string>
+    <string name="hamming_distance">海明距离</string>
+    <string name="dimension_breakdown">维度明细</string>
+    <string name="select_device_a">请选择设备 A</string>
+    <string name="select_device_b">请选择设备 B</string>
+    <string name="paste_device_b_json">请粘贴设备 B 的 JSON</string>
+    <string name="invalid_json">JSON 格式无效</string>
+    <string name="json_parse_error">JSON 解析错误</string>
+    <string name="same_device_warning">选择了同一台设备，相似度将为 100%</string>
+    <string name="need_2_devices">至少需要 2 台设备才能对比。请先采集更多设备信息，或切换设备 B 为"导入 JSON"模式。</string>
+    <string name="select_two_different">请选择两个不同的设备</string>
+
+    <!-- Result -->
+    <string name="same_device">同一设备</string>
+    <string name="same_device_desc">两台设备极大概率是同一台设备</string>
+    <string name="same_device_action">允许 - 无需额外验证</string>
+    <string name="likely_same">可能相同</string>
+    <string name="likely_same_desc">高概率是同一设备（可能更换了部分硬件）</string>
+    <string name="likely_same_action">行为检查 - 监控用户行为模式</string>
+    <string name="uncertain">不确定</string>
+    <string name="uncertain_desc">可能是新设备或系统升级</string>
+    <string name="uncertain_action">需二次验证 - 触发多因素认证</string>
+    <string name="new_device">新设备</string>
+    <string name="new_device_desc">明显不同的设备</string>
+    <string name="new_device_action">验证+监控 - 要求验证并加强监控</string>
+    <string name="high_risk">高风险</string>
+    <string name="high_risk_desc">差异极大，疑似欺诈</string>
+    <string name="high_risk_action">拦截/审核 - 拦截或人工审核</string>
+    <string name="match">匹配</string>
+    <string name="diff">不同</string>
+
+    <!-- History -->
+    <string name="collection_history">采集历史</string>
+    <string name="no_history">暂无历史</string>
+    <string name="collect_to_build">采集设备信息以构建历史记录</string>
+    <string name="delete_entry">删除记录</string>
+    <string name="remove_from_history">从历史记录中移除此设备？</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="clear_all_history">清除所有历史</string>
+    <string name="confirm_clear_all">确定要删除所有历史记录吗？</string>
+    <string name="clear_all">全部清除</string>
+    <string name="deleted">已删除</string>
+    <string name="history_cleared">历史已清除</string>
+
+    <!-- Settings -->
+    <string name="app_settings">应用设置</string>
+    <string name="language">语言</string>
+    <string name="language_en">英文</string>
+    <string name="language_cn">中文</string>
+    <string name="theme_color">主题颜色</string>
+    <string name="blue">蓝色</string>
+    <string name="purple">紫色</string>
+    <string name="green">绿色</string>
+    <string name="red">红色</string>
+    <string name="orange">橙色</string>
+    <string name="restart_required">应用将重新启动以应用更改</string>
+
+    <!-- Permission -->
+    <string name="permissions_required">需要权限</string>
+    <string name="permission_rationale">本应用需要以下权限来采集设备信息用于指纹识别：\n\n- 电话状态：获取设备标识符（IMEI）\n- 位置信息：获取基站和 WiFi 信息\n\n这些数据仅用于设备指纹识别和风险评估。</string>
+    <string name="grant">授权</string>
+    <string name="skip">跳过</string>
+    <string name="permissions_granted">权限已授权！现在可以采集设备信息。</string>
+    <string name="permissions_denied">部分权限被拒绝。采集功能将受限。</string>
+
+    <!-- Collection -->
+    <string name="collection_complete">采集完成！</string>
+    <string name="error">错误</string>
+    <string name="no_device_data">无设备数据</string>
+    <string name="failed_to_copy">复制失败</string>
+
+    <!-- Dimensions -->
+    <string name="hardware">硬件</string>
+    <string name="system">系统</string>
+    <string name="network">网络</string>
+    <string name="app">应用</string>
+    <string name="risk">风险</string>
+    <string name="similarity">相似度</string>
+
+    <!-- About -->
+    <string name="about">关于</string>
+    <string name="about_this_app">关于本应用</string>
+    <string name="about_desc">本应用演示了用于用户识别和风险评估的多维设备指纹识别技术。它采集硬件、系统、网络和应用信息来生成唯一的设备指纹。</string>
+    <string name="features_list">功能列表</string>
+    <string name="feature_50_fields">50+ 设备特征采集</string>
+    <string name="feature_simhash">基于 SimHash 的指纹生成</string>
+    <string name="feature_multi_dim">多维相似度对比</string>
+    <string name="feature_risk">风险环境检测</string>
+    <string name="feature_history">设备历史管理</string>
+    <string name="similarity_thresholds">相似度阈值</string>
+    <string name="threshold_90">90-100%：同一设备 - 允许</string>
+    <string name="threshold_75">75-90%：可能相同 - 行为检查</string>
+    <string name="threshold_60">60-75%：不确定 - 需二次验证</string>
+    <string name="threshold_40">40-60%：新设备 - 验证+监控</string>
+    <string name="threshold_0">0-40%：高风险 - 拦截/审核</string>
+    <string name="privacy_notice">隐私声明</string>
+    <string name="privacy_desc">所有设备信息仅存储在您的设备本地。不会传输到外部服务器。本应用仅用于演示和教育目的。\n\n在生产环境中使用时，请确保遵守当地隐私法规（PIPL、GDPR），并在采集设备信息前获得用户同意。</string>
+    <string name="copyright">2024 设备指纹演示</string>
+</resources>

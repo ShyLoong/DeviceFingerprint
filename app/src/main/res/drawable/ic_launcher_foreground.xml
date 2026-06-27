@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108"
+    android:tint="#FFFFFF">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28C40.7,28 30,38.7 30,52s10.7,24 24,24s24,-10.7 24,-24S67.3,28 54,28zM54,72c-11,0 -20,-9 -20,-20s9,-20 20,-20s20,9 20,20S65,72 54,72z"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,38c-7.7,0 -14,6.3 -14,14s6.3,14 14,14s14,-6.3 14,-14S61.7,38 54,38zM54,62c-5.5,0 -10,-4.5 -10,-10s4.5,-10 10,-10s10,4.5 10,10S59.5,62 54,62z"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,46c-3.3,0 -6,2.7 -6,6s2.7,6 6,6s6,-2.7 6,-6S57.3,46 54,46z"/>
+
+    <!-- Fingerprint lines -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,52c0,-7.7 6.3,-14 14,-14"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,52c0,-5.5 4.5,-10 10,-10"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,52c0,-3.3 2.7,-6 6,-6"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"/>
+
+</vector>

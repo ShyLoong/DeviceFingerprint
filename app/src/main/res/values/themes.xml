@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base theme -->
+    <style name="Theme.DeviceFingerprint" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/secondary_blue</item>
+        <item name="colorSecondaryVariant">@color/secondary_blue_dark</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:colorBackground">#FAFAFA</item>
+        <item name="colorSurface">@android:color/white</item>
+        <item name="colorOnSurface">@android:color/black</item>
+        <item name="colorOutline">#E0E0E0</item>
+        <item name="colorPrimaryContainer">#E3F2FD</item>
+        <item name="colorOnPrimaryContainer">#1565C0</item>
+        <item name="colorSurfaceVariant">#F5F5F5</item>
+    </style>
+
+    <!-- Blue Theme -->
+    <style name="Theme.Blue" parent="Theme.DeviceFingerprint">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#1976D2</item>
+        <item name="colorSecondary">#64B5F6</item>
+        <item name="colorSecondaryVariant">#42A5F5</item>
+        <item name="colorPrimaryContainer">#E3F2FD</item>
+        <item name="colorOnPrimaryContainer">#1565C0</item>
+    </style>
+
+    <!-- Purple Theme -->
+    <style name="Theme.Purple" parent="Theme.DeviceFingerprint">
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="colorPrimaryVariant">#7B1FA2</item>
+        <item name="colorSecondary">#CE93D8</item>
+        <item name="colorSecondaryVariant">#AB47BC</item>
+        <item name="colorPrimaryContainer">#F3E5F5</item>
+        <item name="colorOnPrimaryContainer">#6A1B9A</item>
+    </style>
+
+    <!-- Green Theme -->
+    <style name="Theme.Green" parent="Theme.DeviceFingerprint">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryVariant">#388E3C</item>
+        <item name="colorSecondary">#81C784</item>
+        <item name="colorSecondaryVariant">#66BB6A</item>
+        <item name="colorPrimaryContainer">#E8F5E9</item>
+        <item name="colorOnPrimaryContainer">#2E7D32</item>
+    </style>
+
+    <!-- Red Theme -->
+    <style name="Theme.Red" parent="Theme.DeviceFingerprint">
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorPrimaryVariant">#D32F2F</item>
+        <item name="colorSecondary">#EF9A9A</item>
+        <item name="colorSecondaryVariant">#E57373</item>
+        <item name="colorPrimaryContainer">#FFEBEE</item>
+        <item name="colorOnPrimaryContainer">#C62828</item>
+    </style>
+
+    <!-- Orange Theme -->
+    <style name="Theme.Orange" parent="Theme.DeviceFingerprint">
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryVariant">#F57C00</item>
+        <item name="colorSecondary">#FFB74D</item>
+        <item name="colorSecondaryVariant">#FFA726</item>
+        <item name="colorPrimaryContainer">#FFF3E0</item>
+        <item name="colorOnPrimaryContainer">#EF6C00</item>
+    </style>
+
+</resources>

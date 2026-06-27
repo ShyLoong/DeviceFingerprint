@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="8dp"
+    android:layout_marginTop="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <View
+        android:id="@+id/color_bar"
+        android:layout_width="4dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4CAF50" />
+
+    <TextView
+        android:id="@+id/tv_dimension"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Hardware Similarity"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100% (13/13)"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@android:drawable/arrow_down_float"
+        android:contentDescription="expand" />
+
+</LinearLayout>
