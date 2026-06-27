@@ -1,5 +1,8 @@
 name: Build APK and Release
 
+permissions:
+  contents: write
+
 on:
   # 手动触发
   workflow_dispatch:
@@ -48,11 +51,8 @@ jobs:
           cp app/build/outputs/apk/debug/app-debug.apk release/DeviceFingerprint-v1.0.0-debug.apk
 
       - name: Upload APK to Release
-        uses: softprops/action-gh-release@v1
-        if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
-        with:
-          files: release/*.apk
-          tag_name: ${{ github.event.inputs.tag || github.event.release.tag_name }}
+        run: |
+          gh release upload "${{ github.event.inputs.tag || github.event.release.tag_name }}" release/*.apk --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
